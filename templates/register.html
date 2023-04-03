@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="header-area">
+    <div class="main-header " style="background: #c054ff;
+    background: -moz-linear-gradient(top, #c054ff 0%, #5274ff 100%);
+    background: -webkit-linear-gradient(top, #c054ff 0%, #5274ff 100%);
+    background: linear-gradient(to bottom, #c054ff 0%, #5274ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c054ff', endColorstr='#5274ff', GradientType=0)
+  ">
+  <div class="header-bottom  header-sticky">
+  <div class="container-fluid">
+  <div class="row align-items-center">
+  
+  <div class="col-xl-2 col-lg-2">
+  <div class="logo">
+  <a href="{% url 'index' %}" style="font-size: 3rem;font-weight: bolder;" >Vortex</a>
+  </div>
+  </div>
+  <div class="col-xl-10 col-lg-10">
+  <div class="menu-wrapper d-flex align-items-center justify-content-end">
+  
+  <div class="main-menu d-none d-lg-block">
+  <nav>
+  <ul id="navigation">
+  <li class="active"><a href="{% url 'index' %}">Home</a></li>
+  <li><a href="{% url 'courses' %}">Courses</a></li>
+  <li><a href="{% url 'about' %}">About</a></li>
+  <li><a href="{% url 'blog:bloglist' %}">Blog</a>
+  </li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+  
+  <li class="button-header margin-left "><a href="{% url 'register' %}" class="btn">Register</a></li>
+  <li class="button-header"><a href="{% url 'login' %}" class="btn btn3">Log in</a></li>
+<li><div class="primary-switch" style="margin-top:1rem">
+    <input type="checkbox" id="primary-switch" >
+    <label for="primary-switch"></label>
+    </div></li>  </ul>
+  </nav>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+  <div class="mobile_menu d-block d-lg-none"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <main class="login-body" data-vide-bg="assets/img/login-bg.mp4" >
+    <form class="form-default" action="https://preview.colorlib.com/theme/courses/login-bg.mp4" method="POST">
+    <div class="login-form" style="    margin-top: 35rem;
+    position: initial!important;
+    display: block;
+    margin-right: auto;
+    margin-left: 50vw;
+    padding: 2rem!important;
+    width: 50rem!important;">
+    
+     
+<h2>Registration Here</h2>
+<div class="form-input">
+<label for="name">Full name</label>
+<input type="text" name="name" placeholder="Full name">
+</div>
+<div class="form-input">
+<label for="name">Email Address</label>
+<input type="email" name="email" placeholder="Email Address">
+</div>
+
+<div class="form-input">
+<label for="name">Type</label>
+
+<select name="type" id="">
+  <option>Teacher</option>
+  <option>Student</option>
+</select>
+</div>
+
+<div class="form-input">
+<label for="name">Password</label>
+<input type="password" name="password" placeholder="Password">
+</div>
+<div class="form-input">
+<label for="name">Confirm Password</label>
+<input type="password" name="password" placeholder="Confirm Password">
+</div>
+<div class="form-input pt-30">
+<button type="submit" class="btn btn3">Register</button>
+</div>
+
+<a href="{% url 'login' %}" class="registration">login</a>
+</div>
+</form>
+
+</main>
+{% endblock %}
