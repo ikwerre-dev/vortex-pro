@@ -47,8 +47,11 @@ h6 {
     font-weight: 400;
     text-transform: normal
 }
-.dark-mode, .dark-mode .preloader{
+.dark-mode, .dark-mode .preloader, .dark-mode .single-post-area .blog-author{
     background-color:#212121!important;
+}
+.darkmode .blog_right_sidebar .single_sidebar_widget{
+    background-color: #2c2c2c!important;
 }
 
 .dark-mode .services-area .single-services{
